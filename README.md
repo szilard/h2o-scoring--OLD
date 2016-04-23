@@ -1,8 +1,9 @@
 
 ## Scoring machine learning models with h2o.ai
 
-#### Various options for deploying h2o.ai models (GBM) to production
+#### Various options/directions for deploying h2o.ai models (GBM) to production
 
+**Warning:** This is not production-level code, just prototyping various scoring options/directions for now.
 
 #### 1. Java code
 

@@ -17,7 +17,6 @@ Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian
 Scoring [from R](3-from_R) (the R package too uses actually the REST API)
 
 Speed:
-
 ```
    nrows run_time    qps
 1  1e+00    0.113      9
@@ -36,6 +35,24 @@ Speed:
 14 3e+06   25.041 119804
 15 1e+07   71.186 140477
 ```
+
+Including uploading the an R data.frame to h2o:
+```
+   nrows run_time   qps
+1  1e+00    0.286     3
+2  3e+00    0.299    10
+3  1e+01    0.299    33
+4  3e+01    0.290   103
+5  1e+02    0.298   336
+6  3e+02    1.317   228
+7  1e+03    1.309   764
+8  3e+03    1.339  2240
+9  1e+04    1.423  7027
+10 3e+04    2.633 11394
+11 1e+05    7.354 13598
+```
+
+
 
 
 #### 3. h2o REST API

@@ -13,7 +13,7 @@ Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian
 
 #### 2. From R
 
-Scoring [from R](3-from_R) (the R package as well uses actually the REST API)
+Scoring [from R](3-from_R) (the R package too uses actually the REST API)
 
 Speed:
 

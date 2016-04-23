@@ -7,7 +7,7 @@
 
 Get [Java code](2-pojo) (POJO) and use that for scoring from Java.
 
-Problem: Cannot compile the code due to [bug](https://0xdata.atlassian.net/browse/PUBDEV-1395).
+Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian.net/browse/PUBDEV-1395).
 
 #### 2. 
 

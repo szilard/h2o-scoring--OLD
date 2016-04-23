@@ -36,7 +36,7 @@ Speed:
 15 1e+07   71.186 140477
 ```
 
-Including uploading the an R data.frame to h2o:
+Including uploading the R data.frame to h2o:
 ```
    nrows run_time   qps
 1  1e+00    0.286     3

@@ -65,6 +65,9 @@ Logging the REST calls for `n=1` the timing breakdown (millisec):
 Total time `~290 ms`. The above REST calls add up to `~140 ms` (the difference I assume is overhead of the
 R packages such as logic, JSON parsing of responses etc.)
 
+The first 9 calls are about getting the input data into h2o. The next 3 is an upper bound of how 
+long the actual scoring takes (`~30 ms`: `/4/Predictions...`, `/3/Jobs/...`, `/3/Cloud...`) and the
+last call is grabing the data from h2o back into R.
 
 
 #### 3. h2o REST API

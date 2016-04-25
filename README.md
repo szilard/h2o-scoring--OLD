@@ -11,6 +11,14 @@
 
 Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian.net/browse/PUBDEV-1395).
 
+The bug is related to 
+[max number of constants in Java](https://stackoverflow.com/questions/11437905/java-too-many-constants-jvm-error).
+For this dataset the problem disappears when the 
+[depth of the trees are decreased](https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small).
+According to @daroczig there is some workaround by wrapping the code in anonymous classes.
+
+
+
 
 #### 2. From R
 
@@ -73,11 +81,11 @@ last call is grabing the data from h2o back into R.
 #### 3. h2o REST API
 
 Same as above but driven from some other environment, constructing the REST calls from there.
-For real-time scoring (1 item at a time) a lot of the above overhead can be cut. Order of magnitude-wise
+For real-time scoring (1 item at a time) a lot of the above overhead can be cut. In order of magnitudes
 probably total time can go down from `~300ms` to `~100 ms` maybe even `~50ms` (if there is a better way
 to get data into h2o than via CSV). 
 
 It would be interesting to compare that with the POJO (in case the above bug is fixed/worked around).
-My guess is that for 1 item at a time scoring the POJO will be magnitudes faster (hoipefully), while for large bulk 
+My guess is that for 1 item at a time scoring the POJO will be magnitudes faster (hopefully), while for large bulk 
 scoring maybe of same magnitude.
 

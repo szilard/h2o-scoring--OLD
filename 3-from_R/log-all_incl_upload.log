@@ -1,0 +1,196 @@
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.376
+
+POST      http://localhost:54321/3/PostFile?destination_frame=%2Ftmp%2FRtmpTkbyXR%2Ffile478955b01496.csv_sid_8c96_16
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            11
+
+{ "destination_frame": "/tmp/RtmpTkbyXR/file478955b01496.csv_sid_8c96_16", "total_bytes": 130 }
+
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.391
+
+GET       http://localhost:54321/3/Cloud?skip_ticks=true
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            10
+
+{"__meta":{"schema_version":3,"schema_name":"CloudV3","schema_type":"Iced"},"_exclude_fields":"","skip_ticks":true,"version":"3.8.2.2","branch_name":"rel-turchin","build_number":"2","node_idx":0,"cloud_name":"H2O_started_from_R_szilard_kxl552","cloud_size":1,"cloud_uptime_millis":576343,"cloud_healthy":true,"bad_nodes":0,"consensus":true,"locked":true,"is_client":false,"nodes":[{"__meta":{"schema_version":3,"schema_name":"NodeV3","schema_type":"Iced"},"h2o":"\/127.0.0.1:54321","ip_port":"127.0.0.1:54321","healthy":true,"last_ping":1461607479756,"pid":18747,"num_cpus":16,"cpus_allowed":16,"nthreads":16,"sys_load":0.17,"my_cpu_pct":-1,"sys_cpu_pct":-1,"mem_value_size":4155392,"pojo_mem":556591104,"free_mem":21967383552,"max_mem":22528130048,"swap_mem":0,"num_keys":336,"free_disk":4460642304,"max_disk":4786749440,"rpcs_active":0,"fjthrds":[-1,1,6,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,0,0,0,0,0,0,0,1],"fjqueue":[-1,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,-1,0,0,0,0,0,0,0,0],"tcps_active":0,"open_fds":37,"gflops":11.354999542236328,"mem_bw":1.5591826432E10}]}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.406
+
+POST      http://localhost:54321/3/ParseSetup
+postBody: source_frames=%5B%22%2Ftmp%2FRtmpTkbyXR%2Ffile478955b01496.csv_sid_8c96_16%22%5D&check_header=1&na_strings=%5B%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%5D
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            11
+
+{"__meta":{"schema_version":3,"schema_name":"ParseSetupV3","schema_type":"ParseSetup"},"_exclude_fields":"","source_frames":[{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"\/tmp\/RtmpTkbyXR\/file478955b01496.csv_sid_8c96_16","type":"Key<Frame>","URL":"\/4\/Frames\/\/tmp\/RtmpTkbyXR\/file478955b01496.csv_sid_8c96_16"}],"parse_type":"CSV","separator":44,"single_quotes":false,"check_header":1,"column_names":["Month","DayofMonth","DayOfWeek","DepTime","UniqueCarrier","Origin","Dest","Distance"],"column_types":["Enum","Enum","Enum","Numeric","Enum","Enum","Enum","Numeric"],"na_strings":[["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"]],"column_name_filter":null,"column_offset":0,"column_count":0,"destination_frame":"file478955b01496_csv_sid_8c96_16.hex","header_lines":0,"number_columns":8,"data":[["c-7","c-25","c-3","615","YV","MRY","PHX","598"]],"warnings":null,"chunk_size":4194304,"total_filtered_column_count":8}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.425
+
+GET       http://localhost:54321/3/Cloud?skip_ticks=true
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            9
+
+{"__meta":{"schema_version":3,"schema_name":"CloudV3","schema_type":"Iced"},"_exclude_fields":"","skip_ticks":true,"version":"3.8.2.2","branch_name":"rel-turchin","build_number":"2","node_idx":0,"cloud_name":"H2O_started_from_R_szilard_kxl552","cloud_size":1,"cloud_uptime_millis":576376,"cloud_healthy":true,"bad_nodes":0,"consensus":true,"locked":true,"is_client":false,"nodes":[{"__meta":{"schema_version":3,"schema_name":"NodeV3","schema_type":"Iced"},"h2o":"\/127.0.0.1:54321","ip_port":"127.0.0.1:54321","healthy":true,"last_ping":1461607479756,"pid":18747,"num_cpus":16,"cpus_allowed":16,"nthreads":16,"sys_load":0.17,"my_cpu_pct":-1,"sys_cpu_pct":-1,"mem_value_size":4155392,"pojo_mem":556591104,"free_mem":21967383552,"max_mem":22528130048,"swap_mem":0,"num_keys":336,"free_disk":4460642304,"max_disk":4786749440,"rpcs_active":0,"fjthrds":[-1,1,6,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,0,0,0,0,0,0,0,1],"fjqueue":[-1,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,-1,0,0,0,0,0,0,0,0],"tcps_active":0,"open_fds":37,"gflops":11.354999542236328,"mem_bw":1.5591826432E10}]}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.439
+
+POST      http://localhost:54321/3/Parse
+postBody: source_frames=%5B%22%2Ftmp%2FRtmpTkbyXR%2Ffile478955b01496.csv_sid_8c96_16%22%5D&destination_frame=dR_test&separator=44&parse_type=CSV&single_quotes=FALSE&check_header=1&number_columns=8&column_names=%5B%22Month%22%2C%22DayofMonth%22%2C%22DayOfWeek%22%2C%22DepTime%22%2C%22UniqueCarrier%22%2C%22Origin%22%2C%22Dest%22%2C%22Distance%22%5D&column_types=%5B%22enum%22%2C%22enum%22%2C%22enum%22%2C%22numeric%22%2C%22enum%22%2C%22enum%22%2C%22enum%22%2C%22numeric%22%5D&na_strings=%5B%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%2C%5B%22NA_h2o%22%5D%5D&chunk_size=4194304&delete_on_done=TRUE&blocking=TRUE
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            19
+
+{"__meta":{"schema_version":3,"schema_name":"ParseV3","schema_type":"Iced"},"_exclude_fields":"","destination_frame":{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"dR_test","type":"Key<Frame>","URL":"\/4\/Frames\/dR_test"},"source_frames":[{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"\/tmp\/RtmpTkbyXR\/file478955b01496.csv_sid_8c96_16","type":"Key<Frame>","URL":"\/4\/Frames\/\/tmp\/RtmpTkbyXR\/file478955b01496.csv_sid_8c96_16"}],"parse_type":"CSV","separator":44,"single_quotes":false,"check_header":1,"number_columns":8,"column_names":["Month","DayofMonth","DayOfWeek","DepTime","UniqueCarrier","Origin","Dest","Distance"],"column_types":["enum","enum","enum","numeric","enum","enum","enum","numeric"],"domains":null,"na_strings":[["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"],["NA_h2o"]],"chunk_size":4194304,"delete_on_done":true,"blocking":true,"job":{"__meta":{"schema_version":3,"schema_name":"JobV3","schema_type":"Job"},"_exclude_fields":"","key":{"__meta":{"schema_version":3,"schema_name":"JobKeyV3","schema_type":"Key<Job>"},"name":"$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f","type":"Key<Job>","URL":"\/4\/Jobs\/$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f"},"description":"Parse","status":"DONE","progress":1.0,"progress_msg":"Done.","start_time":1461607480449,"msec":7,"dest":{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"dR_test","type":"Key<Frame>","URL":"\/4\/Frames\/dR_test"},"warnings":null,"exception":null,"stacktrace":null},"rows":1}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.466
+
+GET       http://localhost:54321/3/Jobs/$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            10
+
+{"__meta":{"schema_version":3,"schema_name":"JobsV3","schema_type":"Iced"},"_exclude_fields":"","job_id":{"__meta":{"schema_version":3,"schema_name":"JobKeyV3","schema_type":"Key<Job>"},"name":"$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f","type":"Key<Job>","URL":"\/4\/Jobs\/$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f"},"jobs":[{"__meta":{"schema_version":3,"schema_name":"JobV3","schema_type":"Job"},"_exclude_fields":"","key":{"__meta":{"schema_version":3,"schema_name":"JobKeyV3","schema_type":"Key<Job>"},"name":"$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f","type":"Key<Job>","URL":"\/4\/Jobs\/$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f"},"description":"Parse","status":"DONE","progress":1.0,"progress_msg":"Done.","start_time":1461607480449,"msec":7,"dest":{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"dR_test","type":"Key<Frame>","URL":"\/4\/Frames\/dR_test"},"warnings":null,"exception":null,"stacktrace":null}]}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.481
+
+GET       http://localhost:54321/3/Cloud?skip_ticks=true
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            7
+
+{"__meta":{"schema_version":3,"schema_name":"CloudV3","schema_type":"Iced"},"_exclude_fields":"","skip_ticks":true,"version":"3.8.2.2","branch_name":"rel-turchin","build_number":"2","node_idx":0,"cloud_name":"H2O_started_from_R_szilard_kxl552","cloud_size":1,"cloud_uptime_millis":576432,"cloud_healthy":true,"bad_nodes":0,"consensus":true,"locked":true,"is_client":false,"nodes":[{"__meta":{"schema_version":3,"schema_name":"NodeV3","schema_type":"Iced"},"h2o":"\/127.0.0.1:54321","ip_port":"127.0.0.1:54321","healthy":true,"last_ping":1461607479756,"pid":18747,"num_cpus":16,"cpus_allowed":16,"nthreads":16,"sys_load":0.17,"my_cpu_pct":-1,"sys_cpu_pct":-1,"mem_value_size":4155392,"pojo_mem":556591104,"free_mem":21967383552,"max_mem":22528130048,"swap_mem":0,"num_keys":336,"free_disk":4460642304,"max_disk":4786749440,"rpcs_active":0,"fjthrds":[-1,1,6,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,0,0,0,0,0,0,0,1],"fjqueue":[-1,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,-1,0,0,0,0,0,0,0,0],"tcps_active":0,"open_fds":37,"gflops":11.354999542236328,"mem_bw":1.5591826432E10}]}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.493
+
+GET       http://localhost:54321/3/Frames/dR_test?row_count=10
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            10
+
+{"__meta":{"schema_version":3,"schema_name":"FramesV3","schema_type":"Frames"},"_exclude_fields":"","row_offset":0,"row_count":10,"column_offset":0,"column_count":0,"job":null,"frames":[{"__meta":{"schema_version":3,"schema_name":"FrameV3","schema_type":"Frame"},"frame_id":{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"dR_test","type":"Key<Frame>","URL":"\/4\/Frames\/dR_test"},"byte_size":640,"is_text":false,"row_offset":0,"row_count":1,"column_offset":0,"column_count":8,"total_column_count":8,"checksum":5499257683857000779,"rows":1,"default_percentiles":[0.001,0.01,0.1,0.2,0.25,0.3,0.3333333333333333,0.4,0.5,0.6,0.6666666666666666,0.7,0.75,0.8,0.9,0.99,0.999],"columns":[{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"Month","missing_count":0,"zero_count":1,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.0,"NaN","NaN","NaN","NaN"],"maxs":[0.0,"NaN","NaN","NaN","NaN"],"mean":0.0,"sigma":0.0,"type":"enum","domain":["c-7"],"domain_cardinality":1,"data":[0.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"DayofMonth","missing_count":0,"zero_count":1,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.0,"NaN","NaN","NaN","NaN"],"maxs":[0.0,"NaN","NaN","NaN","NaN"],"mean":0.0,"sigma":0.0,"type":"enum","domain":["c-25"],"domain_cardinality":1,"data":[0.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"DayOfWeek","missing_count":0,"zero_count":1,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.0,"NaN","NaN","NaN","NaN"],"maxs":[0.0,"NaN","NaN","NaN","NaN"],"mean":0.0,"sigma":0.0,"type":"enum","domain":["c-3"],"domain_cardinality":1,"data":[0.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"DepTime","missing_count":0,"zero_count":0,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[615.0,"NaN","NaN","NaN","NaN"],"maxs":[615.0,"NaN","NaN","NaN","NaN"],"mean":615.0,"sigma":0.0,"type":"int","domain":null,"domain_cardinality":0,"data":[615.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"UniqueCarrier","missing_count":0,"zero_count":1,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.0,"NaN","NaN","NaN","NaN"],"maxs":[0.0,"NaN","NaN","NaN","NaN"],"mean":0.0,"sigma":0.0,"type":"enum","domain":["YV"],"domain_cardinality":1,"data":[0.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"Origin","missing_count":0,"zero_count":1,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.0,"NaN","NaN","NaN","NaN"],"maxs":[0.0,"NaN","NaN","NaN","NaN"],"mean":0.0,"sigma":0.0,"type":"enum","domain":["MRY"],"domain_cardinality":1,"data":[0.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"Dest","missing_count":0,"zero_count":1,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.0,"NaN","NaN","NaN","NaN"],"maxs":[0.0,"NaN","NaN","NaN","NaN"],"mean":0.0,"sigma":0.0,"type":"enum","domain":["PHX"],"domain_cardinality":1,"data":[0.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"Distance","missing_count":0,"zero_count":0,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[598.0,"NaN","NaN","NaN","NaN"],"maxs":[598.0,"NaN","NaN","NaN","NaN"],"mean":598.0,"sigma":0.0,"type":"int","domain":null,"domain_cardinality":0,"data":[598.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null}],"compatible_models":null,"chunk_summary":{"__meta":{"schema_version":3,"schema_name":"TwoDimTableV3","schema_type":"TwoDimTable"},"name":"Chunk compression summary","description":"","columns":[{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"chunk_type","type":"string","format":"%8s","description":"Chunk Type"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"chunk_name","type":"string","format":"%s","description":"Chunk Name"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"count","type":"int","format":"%10d","description":"Count"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"count_percentage","type":"float","format":"%10.3f %%","description":"Count Percentage"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"size","type":"string","format":"%10s","description":"Size"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"size_percentage","type":"float","format":"%10.3f %%","description":"Size Percentage"}],"rowcount":1,"data":[["C0L"],["Constant Integers"],[8],[100.0],["    640  B"],[100.0]]},"distribution_summary":{"__meta":{"schema_version":3,"schema_name":"TwoDimTableV3","schema_type":"TwoDimTable"},"name":"Frame distribution summary","description":"","columns":[{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"","type":"string","format":"%s","description":""},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"size","type":"string","format":"%s","description":"Size"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"number_of_rows","type":"float","format":"%f","description":"Number of Rows"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"number_of_chunks_per_column","type":"float","format":"%f","description":"Number of Chunks per Column"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"number_of_chunks","type":"float","format":"%f","description":"Number of Chunks"}],"rowcount":6,"data":[["127.0.0.1:54321","mean","min","max","stddev","total"],["    640  B","    640  B","    640  B","    640  B","      0  B","    640  B"],[1.0,1.0,1.0,1.0,0.0,1.0],[1.0,1.0,1.0,1.0,0.0,1.0],[8.0,8.0,8.0,8.0,0.0,8.0]]}}],"compatible_models":null,"domain":null}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.525
+
+GET       http://localhost:54321/3/Cloud?skip_ticks=true
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            7
+
+{"__meta":{"schema_version":3,"schema_name":"CloudV3","schema_type":"Iced"},"_exclude_fields":"","skip_ticks":true,"version":"3.8.2.2","branch_name":"rel-turchin","build_number":"2","node_idx":0,"cloud_name":"H2O_started_from_R_szilard_kxl552","cloud_size":1,"cloud_uptime_millis":576476,"cloud_healthy":true,"bad_nodes":0,"consensus":true,"locked":true,"is_client":false,"nodes":[{"__meta":{"schema_version":3,"schema_name":"NodeV3","schema_type":"Iced"},"h2o":"\/127.0.0.1:54321","ip_port":"127.0.0.1:54321","healthy":true,"last_ping":1461607479756,"pid":18747,"num_cpus":16,"cpus_allowed":16,"nthreads":16,"sys_load":0.17,"my_cpu_pct":-1,"sys_cpu_pct":-1,"mem_value_size":4155392,"pojo_mem":556591104,"free_mem":21967383552,"max_mem":22528130048,"swap_mem":0,"num_keys":336,"free_disk":4460642304,"max_disk":4786749440,"rpcs_active":0,"fjthrds":[-1,1,6,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,0,0,0,0,0,0,0,1],"fjqueue":[-1,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,-1,0,0,0,0,0,0,0,0],"tcps_active":0,"open_fds":37,"gflops":11.354999542236328,"mem_bw":1.5591826432E10}]}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.538
+
+POST      http://localhost:54321/4/Predictions/models/test_airline_GBM_100k/frames/dR_test
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            10
+
+{"__meta":{"schema_version":3,"schema_name":"JobV3","schema_type":"Job"},"_exclude_fields":"","key":{"__meta":{"schema_version":3,"schema_name":"JobKeyV3","schema_type":"Key<Job>"},"name":"$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0","type":"Key<Job>","URL":"\/4\/Jobs\/$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0"},"description":"prediction","status":"RUNNING","progress":0.0,"progress_msg":null,"start_time":1461607480546,"msec":0,"dest":{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"predictions_98db_test_airline_GBM_100k_on_dR_test","type":"Key<Frame>","URL":"\/4\/Frames\/predictions_98db_test_airline_GBM_100k_on_dR_test"},"warnings":null,"exception":null,"stacktrace":null}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.555
+
+GET       http://localhost:54321/3/Jobs/$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            9
+
+{"__meta":{"schema_version":3,"schema_name":"JobsV3","schema_type":"Iced"},"_exclude_fields":"","job_id":{"__meta":{"schema_version":3,"schema_name":"JobKeyV3","schema_type":"Key<Job>"},"name":"$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0","type":"Key<Job>","URL":"\/4\/Jobs\/$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0"},"jobs":[{"__meta":{"schema_version":3,"schema_name":"JobV3","schema_type":"Job"},"_exclude_fields":"","key":{"__meta":{"schema_version":3,"schema_name":"JobKeyV3","schema_type":"Key<Job>"},"name":"$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0","type":"Key<Job>","URL":"\/4\/Jobs\/$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0"},"description":"prediction","status":"DONE","progress":1.0,"progress_msg":"Done.","start_time":1461607480546,"msec":4,"dest":{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"predictions_98db_test_airline_GBM_100k_on_dR_test","type":"Key<Frame>","URL":"\/4\/Frames\/predictions_98db_test_airline_GBM_100k_on_dR_test"},"warnings":null,"exception":null,"stacktrace":null}]}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.572
+
+GET       http://localhost:54321/3/Cloud?skip_ticks=true
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            9
+
+{"__meta":{"schema_version":3,"schema_name":"CloudV3","schema_type":"Iced"},"_exclude_fields":"","skip_ticks":true,"version":"3.8.2.2","branch_name":"rel-turchin","build_number":"2","node_idx":0,"cloud_name":"H2O_started_from_R_szilard_kxl552","cloud_size":1,"cloud_uptime_millis":576523,"cloud_healthy":true,"bad_nodes":0,"consensus":true,"locked":true,"is_client":false,"nodes":[{"__meta":{"schema_version":3,"schema_name":"NodeV3","schema_type":"Iced"},"h2o":"\/127.0.0.1:54321","ip_port":"127.0.0.1:54321","healthy":true,"last_ping":1461607479756,"pid":18747,"num_cpus":16,"cpus_allowed":16,"nthreads":16,"sys_load":0.17,"my_cpu_pct":-1,"sys_cpu_pct":-1,"mem_value_size":4155392,"pojo_mem":556591104,"free_mem":21967383552,"max_mem":22528130048,"swap_mem":0,"num_keys":336,"free_disk":4460642304,"max_disk":4786749440,"rpcs_active":0,"fjthrds":[-1,1,6,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,0,0,0,0,0,0,0,1],"fjqueue":[-1,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,-1,0,0,0,0,0,0,0,0],"tcps_active":0,"open_fds":37,"gflops":11.354999542236328,"mem_bw":1.5591826432E10}]}
+
+------------------------------------------------------------
+
+Time:     2016-04-25 11:04:40.586
+
+GET       http://localhost:54321/3/Frames/predictions_98db_test_airline_GBM_100k_on_dR_test?row_count=10
+postBody: 
+
+curlError:         FALSE
+curlErrorMessage:  
+httpStatusCode:    200
+httpStatusMessage: OK
+millis:            15
+
+{"__meta":{"schema_version":3,"schema_name":"FramesV3","schema_type":"Frames"},"_exclude_fields":"","row_offset":0,"row_count":10,"column_offset":0,"column_count":0,"job":null,"frames":[{"__meta":{"schema_version":3,"schema_name":"FrameV3","schema_type":"Frame"},"frame_id":{"__meta":{"schema_version":3,"schema_name":"FrameKeyV3","schema_type":"Key<Frame>"},"name":"predictions_98db_test_airline_GBM_100k_on_dR_test","type":"Key<Frame>","URL":"\/4\/Frames\/predictions_98db_test_airline_GBM_100k_on_dR_test"},"byte_size":240,"is_text":false,"row_offset":0,"row_count":1,"column_offset":0,"column_count":3,"total_column_count":3,"checksum":-2364339077899934977,"rows":1,"default_percentiles":[0.001,0.01,0.1,0.2,0.25,0.3,0.3333333333333333,0.4,0.5,0.6,0.6666666666666666,0.7,0.75,0.8,0.9,0.99,0.999],"columns":[{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"predict","missing_count":0,"zero_count":1,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.0,"NaN","NaN","NaN","NaN"],"maxs":[0.0,"NaN","NaN","NaN","NaN"],"mean":0.0,"sigma":0.0,"type":"enum","domain":["N","Y"],"domain_cardinality":2,"data":[0.0],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"N","missing_count":0,"zero_count":0,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.9183213717546295,"NaN","NaN","NaN","NaN"],"maxs":[0.9183213717546295,"NaN","NaN","NaN","NaN"],"mean":0.9183213717546295,"sigma":0.0,"type":"real","domain":null,"domain_cardinality":0,"data":[0.9183213717546295],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null},{"__meta":{"schema_version":3,"schema_name":"ColV3","schema_type":"Vec"},"label":"Y","missing_count":0,"zero_count":0,"positive_infinity_count":0,"negative_infinity_count":0,"mins":[0.08167862824537052,"NaN","NaN","NaN","NaN"],"maxs":[0.08167862824537052,"NaN","NaN","NaN","NaN"],"mean":0.08167862824537052,"sigma":0.0,"type":"real","domain":null,"domain_cardinality":0,"data":[0.08167862824537052],"string_data":null,"precision":-1,"histogram_bins":null,"histogram_base":0.0,"histogram_stride":0.0,"percentiles":null}],"compatible_models":null,"chunk_summary":{"__meta":{"schema_version":3,"schema_name":"TwoDimTableV3","schema_type":"TwoDimTable"},"name":"Chunk compression summary","description":"","columns":[{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"chunk_type","type":"string","format":"%8s","description":"Chunk Type"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"chunk_name","type":"string","format":"%s","description":"Chunk Name"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"count","type":"int","format":"%10d","description":"Count"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"count_percentage","type":"float","format":"%10.3f %%","description":"Count Percentage"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"size","type":"string","format":"%10s","description":"Size"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"size_percentage","type":"float","format":"%10.3f %%","description":"Size Percentage"}],"rowcount":2,"data":[["C0L","C0D"],["Constant Integers","Constant Reals"],[1,2],[33.333336,66.66667],["     80  B","    160  B"],[33.333336,66.66667]]},"distribution_summary":{"__meta":{"schema_version":3,"schema_name":"TwoDimTableV3","schema_type":"TwoDimTable"},"name":"Frame distribution summary","description":"","columns":[{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"","type":"string","format":"%s","description":""},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"size","type":"string","format":"%s","description":"Size"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"number_of_rows","type":"float","format":"%f","description":"Number of Rows"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"number_of_chunks_per_column","type":"float","format":"%f","description":"Number of Chunks per Column"},{"__meta":{"schema_version":-1,"schema_name":"ColumnSpecsBase","schema_type":"Iced"},"name":"number_of_chunks","type":"float","format":"%f","description":"Number of Chunks"}],"rowcount":6,"data":[["127.0.0.1:54321","mean","min","max","stddev","total"],["    240  B","    240  B","    240  B","    240  B","      0  B","    240  B"],[1.0,1.0,1.0,1.0,0.0,1.0],[1.0,1.0,1.0,1.0,0.0,1.0],[3.0,3.0,3.0,3.0,0.0,3.0]]}}],"compatible_models":null,"domain":null}
+

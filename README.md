@@ -16,7 +16,7 @@ Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian
 
 Scoring [from R](3-from_R) (the R package too uses actually the REST API)
 
-Timings (not rigourous):
+[Timings](3-from_R/1-score.R) (not rigourous):
 ```
   nrows run_all qps_all run_h2o qps_h2o run_upl
 1  1e+00   0.322       3   0.084      12   0.253
@@ -42,6 +42,23 @@ not add up)
 
 Uploads run mostly single core (except the h2o parsing at the very end). The scoring runs
 single core on smaller sizes, uses 4 cores for `n=300,000` and all cores (16) for `n>=1M`.
+
+[Logging](3-from_R/2-score-RESTcalls.R) the REST calls for `n=1` the timing breakdown (millisec):
+```
+11      POST      /3/PostFile?destination_frame=%2Ftmp%2FRtmpTkbyXR%2Ffile478955b01496.csv_sid_8c96_16
+10      GET       /3/Cloud?skip_ticks=true
+11      POST      /3/ParseSetup
+9       GET       /3/Cloud?skip_ticks=true
+19      POST      /3/Parse
+10      GET       /3/Jobs/$03017f00000132d4ffffffff$_a6fd865986e9f70b3cce10d5a31b471f
+7       GET       /3/Cloud?skip_ticks=true
+10      GET       /3/Frames/dR_test?row_count=10
+7       GET       /3/Cloud?skip_ticks=true
+10      POST      /4/Predictions/models/test_airline_GBM_100k/frames/dR_test
+9       GET       /3/Jobs/$03017f00000132d4ffffffff$_bed784af62482730622ad442027d47a0
+9       GET       /3/Cloud?skip_ticks=true
+15      GET       /3/Frames/predictions_98db_test_airline_GBM_100k_on_dR_test?row_count=10
+```
 
 
 #### 3. h2o REST API

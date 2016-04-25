@@ -1,0 +1,8 @@
+
+egrep "^(GET|POST)" log-all_incl_upload.log > /tmp/h2o-scoring-req.log
+egrep "^millis" log-all_incl_upload.log > /tmp/h2o-scoring-time.log
+paste /tmp/h2o-scoring-time.log /tmp/h2o-scoring-req.log | sed -s 's/millis: *//' | sed 's/http:\/\/localhost:54321//'
+
+paste /tmp/h2o-scoring-time.log /tmp/h2o-scoring-req.log | sed -s 's/millis: *//' | sed 's/GET.*//' | sed 's/POST.*//' | Rscript -e 'x <- scan("stdin"); print(sum(x))'
+###[1] 137
+

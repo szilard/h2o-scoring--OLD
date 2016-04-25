@@ -3,7 +3,7 @@
 
 #### Various options for deploying h2o.ai models (GBM) to production
 
-**Warning:** This is not production-level code, just prototyping various scoring options for now.
+**Warning:** This is not production-level code, just prototyping various directions for now.
 
 #### 1. Java code
 
@@ -43,7 +43,7 @@ not add up)
 Uploads run mostly single core (except the h2o parsing at the very end). The scoring runs
 single core on smaller sizes, uses 4 cores for `n=300,000` and all cores (16) for `n>=1M`.
 
-[Logging](3-from_R/2-score-RESTcalls.R) the REST calls for `n=1` the timing breakdown (millisec):
+Logging the REST calls for `n=1` the timing breakdown (millisec):
 ```
 11      POST      /3/PostFile?destination_frame=%2Ftmp%2FRtmpTkbyXR%2Ffile478955b01496.csv_sid_8c96_16
 10      GET       /3/Cloud?skip_ticks=true
@@ -59,6 +59,8 @@ single core on smaller sizes, uses 4 cores for `n=300,000` and all cores (16) fo
 9       GET       /3/Cloud?skip_ticks=true
 15      GET       /3/Frames/predictions_98db_test_airline_GBM_100k_on_dR_test?row_count=10
 ```
+([Code](3-from_R/2-score-RESTcalls.R), [logs](3-from_R/log-all_incl_upload.log), 
+[analysis](3-from_R/2a-score-RESTcalls_analysis.txt))
 
 Total time `~290 ms`. The above REST calls add up to `~140 ms` (the difference I assume is overhead of the
 R packages such as logic, JSON parsing of responses etc.)

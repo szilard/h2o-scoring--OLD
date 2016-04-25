@@ -60,6 +60,10 @@ single core on smaller sizes, uses 4 cores for `n=300,000` and all cores (16) fo
 15      GET       /3/Frames/predictions_98db_test_airline_GBM_100k_on_dR_test?row_count=10
 ```
 
+Total time `~290 ms`. The above REST calls add up to `~140 ms` (the difference I assume is overhead of the
+R packages such as logic, JSON parsing of responses etc.)
+
+
 
 #### 3. h2o REST API
 

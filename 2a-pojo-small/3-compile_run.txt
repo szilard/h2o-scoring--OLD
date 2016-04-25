@@ -1,0 +1,6 @@
+
+javac -cp h2o-genmodel.jar -J-Xmx4g test_airline_GBM_100k_SMALL.java main.java 
+
+time java -cp .:h2o-genmodel.jar main
+#0.056455241895065074
+#real    0m0.503s

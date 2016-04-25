@@ -15,7 +15,8 @@ The bug is related to
 [max number of constants in Java](https://stackoverflow.com/questions/11437905/java-too-many-constants-jvm-error).
 For this dataset the problem disappears when the 
 [depth of the trees are decreased](https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small).
-According to @daroczig there is some workaround by wrapping the generated code in anonymous classes.
+According to [@daroczig](https://github.com/daroczig) 
+there is some workaround by wrapping the generated code in anonymous classes.
 
 
 #### 2. From R

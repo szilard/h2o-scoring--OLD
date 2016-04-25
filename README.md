@@ -66,11 +66,14 @@ Total time `~290 ms`. The above REST calls add up to `~140 ms` (the difference I
 R packages such as logic, JSON parsing of responses etc.)
 
 The first 9 calls are about getting the input data into h2o. The next 3 is an upper bound of how 
-long the actual scoring takes (`~30 ms`: `/4/Predictions...`, `/3/Jobs/...`, `/3/Cloud...`) and the
+long the actual scoring takes (`<30 ms`: `/4/Predictions...`, `/3/Jobs/...`, `/3/Cloud...`) and the
 last call is grabing the data from h2o back into R.
 
 
 #### 3. h2o REST API
 
-...
+Same as above but driven from some other environment, constructing the REST calls from there.
+For real-time scoring (1 item at a time) a lot of the above overhead can be cut. Order of magnitude-wise
+probably total time can go down from `~300ms` to `~50 ms` maybe even `~30ms`. It would be interesting
+to compare that with the POJO (in case the above bug is fixed/worked around).
 

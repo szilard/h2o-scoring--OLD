@@ -74,6 +74,7 @@ last call is grabing the data from h2o back into R.
 
 Same as above but driven from some other environment, constructing the REST calls from there.
 For real-time scoring (1 item at a time) a lot of the above overhead can be cut. Order of magnitude-wise
-probably total time can go down from `~300ms` to `~50 ms` maybe even `~30ms`. It would be interesting
+probably total time can go down from `~300ms` to `~50 ms` maybe even `~30ms` (if there is a better way
+to get data into h2o than via CSV). It would be interesting
 to compare that with the POJO (in case the above bug is fixed/worked around).
 

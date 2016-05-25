@@ -24,7 +24,10 @@ public class main {
      row.put("Dest", "PHX");
      row.put("Distance", "598");
 
+     long startTime = System.nanoTime();
      BinomialModelPrediction p = model.predictBinomial(row);
+     long stopTime = System.nanoTime();
+     System.out.println((stopTime - startTime)/1000000.0);
      System.out.print(p.classProbabilities[1]);
 
    } 

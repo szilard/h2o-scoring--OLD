@@ -19,6 +19,8 @@ For this dataset the problem disappears when the
 According to [@daroczig](https://github.com/daroczig) 
 there is some workaround by wrapping the generated code in anonymous classes.
 
+H2O [promised to fix the bug](https://groups.google.com/forum/#!searchin/h2ostream/szilard/h2ostream/ARfrFEU1qA8/Yv5MusJLKQAJ).
+
 
 #### 2. From R
 

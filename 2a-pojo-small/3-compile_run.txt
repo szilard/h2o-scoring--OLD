@@ -2,43 +2,11 @@
 javac -cp h2o-genmodel.jar -J-Xmx4g test_airline_GBM_100k_SMALL.java main.java 
 
 time java -cp .:h2o-genmodel.jar main
+
+#1.100504
 #0.056455241895065074
-#real    0m0.503s
-
-
-
-     long startTime = System.nanoTime();
-     BinomialModelPrediction p = model.predictBinomial(row);
-     long stopTime = System.nanoTime();
-     System.out.println((stopTime - startTime)/1000000.0);
-     System.out.print(p.classProbabilities[1]);
-
-395.786203
-0.056455241895065074
-real    0m0.515s
-user    0m0.634s
-sys     0m0.062s     
-
-
-JVM start ~ 100ms
-scoring   ~ 400ms ???
-
-
-
-
-     long startTime = System.nanoTime();
-//     BinomialModelPrediction p = model.predictBinomial(row);
-     long stopTime = System.nanoTime();
-     System.out.println((stopTime - startTime)/1000000.0);
-//     System.out.print(p.classProbabilities[1]);
-
-1.14E-4
-
-real    0m0.117s
-user    0m0.133s
-sys     0m0.032s
-
-
-
+#real    0m0.510s
+#user    0m0.619s
+#sys     0m0.058s
 
 

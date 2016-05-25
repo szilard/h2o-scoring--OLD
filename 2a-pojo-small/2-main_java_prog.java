@@ -15,20 +15,32 @@ public class main {
 //   c-7       c-25       c-3     615            YV    MRY  PHX      598                 N
 
      RowData row = new RowData();
-     row.put("Month", "c-7");
-     row.put("DayofMonth", "c-25");
-     row.put("DayOfWeek", "c-3");
-     row.put("DepTime", "615");
+     row.put("Month", "c-1");
+     row.put("DayofMonth", "c-2");
+     row.put("DayOfWeek", "c-2");
+     row.put("DepTime", "715");
      row.put("UniqueCarrier", "YV");
      row.put("Origin", "MRY");
      row.put("Dest", "PHX");
-     row.put("Distance", "598");
+     row.put("Distance", "298");
+     BinomialModelPrediction p = model.predictBinomial(row);
+
+     RowData row2 = new RowData();
+     row2.put("Month", "c-7");
+     row2.put("DayofMonth", "c-25");
+     row2.put("DayOfWeek", "c-3");
+     row2.put("DepTime", "615");
+     row2.put("UniqueCarrier", "YV");
+     row2.put("Origin", "MRY");
+     row2.put("Dest", "PHX");
+     row2.put("Distance", "598");
 
      long startTime = System.nanoTime();
-     BinomialModelPrediction p = model.predictBinomial(row);
+     BinomialModelPrediction p2 = model.predictBinomial(row2);
      long stopTime = System.nanoTime();
      System.out.println((stopTime - startTime)/1000000.0);
-     System.out.print(p.classProbabilities[1]);
+
+     System.out.print(p2.classProbabilities[1]);
 
    } 
 }

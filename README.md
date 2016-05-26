@@ -10,7 +10,6 @@
 [Export Java code](2-pojo) (POJO) and use that for scoring (from Java).
 
 Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian.net/browse/PUBDEV-1395).
-
 The bug is related to 
 [max number of constants in Java](https://stackoverflow.com/questions/11437905/java-too-many-constants-jvm-error).
 For this dataset the problem disappears when the 
@@ -18,8 +17,10 @@ For this dataset the problem disappears when the
 
 According to [@daroczig](https://github.com/daroczig) 
 there is some workaround by wrapping the generated code in anonymous classes.
-
 H2O [promised to fix the bug](https://groups.google.com/forum/#!searchin/h2ostream/szilard/h2ostream/ARfrFEU1qA8/Yv5MusJLKQAJ).
+
+For GBM with [smaller depth of trees]((https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small) 
+the POJO scoring is very fast `~1ms`.
 
 
 #### 2. From R
@@ -88,6 +89,10 @@ probably total time can go down from `~300ms` to `~100 ms` maybe even `~50ms` (i
 to get data into h2o than via CSV). 
 
 It would be interesting to compare that with the POJO (in case the above bug is fixed/worked around).
-My guess is that for 1 item at a time scoring the POJO will be magnitudes faster (hopefully), while for large bulk 
-scoring maybe of same magnitude.
+My guess is that for 1 item at a time scoring the POJO will be magnitudes faster (hopefully),
+while for large bulk scoring maybe of same magnitude.
+
+**Update:** For GBM with smaller depth for which POJO works, the scoring is super fast indeed
+`~1ms`. So it seems that wrapping the POJO into a separate scoring system/server/API would be 
+a better option (see e.g. [here](https://github.com/cardcorp/h2o-scoring-engine-base)).
 

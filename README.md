@@ -14,12 +14,11 @@ The bug is related to
 [max number of constants in Java](https://stackoverflow.com/questions/11437905/java-too-many-constants-jvm-error).
 For this dataset the problem disappears when the 
 [depth of the trees are decreased](https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small).
-
 According to [@daroczig](https://github.com/daroczig) 
 there is some workaround by wrapping the generated code in anonymous classes.
 H2O [promised to fix the bug](https://groups.google.com/forum/#!searchin/h2ostream/szilard/h2ostream/ARfrFEU1qA8/Yv5MusJLKQAJ).
 
-For GBM with [smaller depth of trees]((https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small) 
+For GBM with [smaller depth of trees](https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small) 
 the POJO scoring is very fast `~1ms`.
 
 

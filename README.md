@@ -20,6 +20,8 @@ H2O [promised to fix the bug](https://groups.google.com/forum/#!searchin/h2ostre
 For GBM with [smaller depth of trees](https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small) 
 the POJO scoring is very fast `~1ms`.~~
 
+Scoring takes `<1ms` with 100 trees, `max_depth = 10`.
+
 
 #### 2. From R
 
@@ -86,11 +88,12 @@ For real-time scoring (1 item at a time) a lot of the above overhead can be cut.
 probably total time can go down from `~300ms` to `~100 ms` maybe even `~50ms` (if there is a better way
 to get data into h2o than via CSV). 
 
-It would be interesting to compare that with the POJO (in case the above bug is fixed/worked around).
+~~It would be interesting to compare that with the POJO (in case the above bug is fixed/worked around).
 My guess is that for 1 item at a time scoring the POJO will be magnitudes faster (hopefully),
-while for large bulk scoring maybe of same magnitude.
-
+while for large bulk scoring maybe of same magnitude. 
 **Update:** For GBM with smaller depth for which POJO works, the scoring is super fast indeed
 `~1ms`. So it seems that wrapping the POJO into a separate scoring system/server/API would be 
-a better option (see e.g. [here](https://github.com/cardcorp/h2o-scoring-engine-base)).
+a better option (see e.g. [here](https://github.com/cardcorp/h2o-scoring-engine-base)).~~
+
+Scoring with the POJO is way faster for 1 event (see 1. above).
 

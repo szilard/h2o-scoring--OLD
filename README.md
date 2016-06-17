@@ -9,7 +9,7 @@
 
 [Export Java code](2-pojo) (POJO) and use that for scoring (from Java).
 
-Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian.net/browse/PUBDEV-1395).
+~~Problem: Cannot compile the code (for GBM) due to [bug](https://0xdata.atlassian.net/browse/PUBDEV-1395).
 The bug is related to 
 [max number of constants in Java](https://stackoverflow.com/questions/11437905/java-too-many-constants-jvm-error).
 For this dataset the problem disappears when the 
@@ -17,9 +17,8 @@ For this dataset the problem disappears when the
 According to [@daroczig](https://github.com/daroczig) 
 there is some workaround by wrapping the generated code in anonymous classes.
 H2O [promised to fix the bug](https://groups.google.com/forum/#!searchin/h2ostream/szilard/h2ostream/ARfrFEU1qA8/Yv5MusJLKQAJ).
-
 For GBM with [smaller depth of trees](https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small) 
-the POJO scoring is very fast `~1ms`.
+the POJO scoring is very fast `~1ms`.~~
 
 
 #### 2. From R

@@ -25,7 +25,13 @@ public class main {
      row.put("Distance", "598");
 
      BinomialModelPrediction p = model.predictBinomial(row);
-     System.out.print(p.classProbabilities[1]);
+     
+     long startTime = System.nanoTime();
+     BinomialModelPrediction p2 = model.predictBinomial(row);
+     long stopTime = System.nanoTime();
+     System.out.println((stopTime - startTime)/1000000.0);
+
+     System.out.print(p2.classProbabilities[1]);
 
    } 
 }

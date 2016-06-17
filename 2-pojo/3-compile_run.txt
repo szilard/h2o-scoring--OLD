@@ -1,13 +1,10 @@
 
 javac -cp h2o-genmodel.jar -J-Xmx4g test_airline_GBM_100k.java main.java 
+                             
+time java -cp .:h2o-genmodel.jar main
 
-test_airline_GBM_100k.java:3136: error: code too large
-  public static final byte[] GRPSPLIT0 = new byte[] {1, -128, 32, 18, 2, -42, 0, 26, 18, 8, -96, 10, 2, 32, 0, 32, 65, 48, 81, 8, -64, -118, 38, 16, -76, -95, 97, 4, 40, 3, 4, 10, 4, 74, 33};
-                             ^
-1 error
-                        
-                             
-                             
-## TODO after it compiles: 
-## time java -cp .:h2o-genmodel.jar main
-   
+0.264793
+0.05936787580100844
+real    0m0.696s
+user    0m0.822s
+sys     0m0.059s   

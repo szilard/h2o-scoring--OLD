@@ -8,3 +8,12 @@ time java -cp .:h2o-genmodel.jar main
 real    0m0.696s
 user    0m0.822s
 sys     0m0.059s   
+
+
+depth runtime (ms)
+10      0.264793
+15      
+20      0.379639 
+
+
+

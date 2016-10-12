@@ -1,0 +1,61 @@
+
+cd wip/steam-1.0.0-linux-amd64/
+
+./steam serve master --superuser-name=superuser --superuser-password=superuser
+
+java -jar var/master/assets/jetty-runner.jar var/master/assets/ROOT.war
+
+
+
+start H2O (e.g. from R/Rstudio), import data, train GBM
+
+
+
+steam: http://localhost:9000/ , log in, create project (connect to cluster, import model)
+
+deploy model, will give your port number e.g. 51157
+
+
+
+time curl "localhost:51157/predict?Month=c-7&DayofMonth=c-25&DayOfWeek=c-3&DepTime=615&UniqueCarrier=YV&Origin=MRY&Dest=PHX&Distance=598"
+
+{"labelIndex":0,"label":"N","classProbabilities":[0.9307802345334482,0.06921976546655179]}
+
+real    0m0.009s
+user    0m0.007s
+sys     0m0.000s
+
+
+ab -n 100000 -c 1000 "localhost:51157/predict?Month=c-7&DayofMonth=c-25&DayOfWeek=c-3&DepTime=615&UniqueCarrier=YV&Origin=MRY&Dest=PHX&Distance=598"
+
+Concurrency Level:      1000
+Time taken for tests:   21.511 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      19900000 bytes
+HTML transferred:       9000000 bytes
+Requests per second:    4648.81 [#/sec] (mean)
+Time per request:       215.109 [ms] (mean)
+Time per request:       0.215 [ms] (mean, across all concurrent requests)
+Transfer rate:          903.43 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   3.3      0      47
+Processing:    21  213  41.4    211     395
+Waiting:       18  213  41.4    211     395
+Total:         64  214  40.6    211     395
+
+Percentage of the requests served within a certain time (ms)
+  50%    211
+  66%    231
+  75%    243
+  80%    250
+  90%    265
+  95%    276
+  98%    301
+  99%    325
+ 100%    395 (longest request)
+
+
+

@@ -5,6 +5,11 @@
 
 **Warning:** This is not production-level code, just prototyping various directions for now.
 
+**Update:** h2o.ai has released recently Steam, a new product that makes it easy to deploy h2o 
+models as REST APIs. It is the prefered method to deploy models for real-time scoring and
+it makes the other methods (and this github repo) obsolete. See more details 
+[here](https://github.com/szilard/h2o-scoring#4-steam).
+
 #### 1. Java code
 
 [Export Java code](2-pojo) (POJO) and use that for scoring (from Java).
@@ -97,8 +102,6 @@ a better option (see e.g. [here](https://github.com/cardcorp/h2o-scoring-engine-
 
 Scoring with the POJO is way faster for 1 event (see 1. above).
 
-
-*Update:*
 
 #### 4. Steam
 

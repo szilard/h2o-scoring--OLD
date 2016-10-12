@@ -97,3 +97,16 @@ a better option (see e.g. [here](https://github.com/cardcorp/h2o-scoring-engine-
 
 Scoring with the POJO is way faster for 1 event (see 1. above).
 
+
+*Update:*
+
+#### 4. Steam
+
+[Steam](http://www.h2o.ai/steam/) is a new product from h2o.ai that makes it easy to deploy
+h2o models as REST APIs. It is the prefered method to deploy models for real-time scoring and it makes
+the previous methods (and this github repo) obsolete. 
+
+Scoring takes `<1ms` with 100 trees, `max_depth = 10`. Some quick notes on how to set up and how fast it is
+are [here](https://github.com/szilard/h2o-scoring/blob/master/5-steam/steps.txt).
+
+

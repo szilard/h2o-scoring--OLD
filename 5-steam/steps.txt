@@ -59,3 +59,6 @@ Percentage of the requests served within a certain time (ms)
 
 
 
+*** NOTE: The above result of response times of <1ms are misleading as we were scoring the same input,
+therefore various caching effects took place. More realistically see ~/5a-steam-timing
+

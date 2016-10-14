@@ -1,0 +1,34 @@
+```{r}
+
+library(readr)
+library(httr)
+library(ggplot2)
+
+d_test <- read_csv("/var/data/bm-ml/test.csv")
+#d_test <- read_csv("https://s3.amazonaws.com/benchm-ml--main/test.csv")
+
+
+port <- 52739
+
+M <- 30000
+tm <- numeric(M)
+for (m in 1:M) {
+  X_test_list <- as.list(d_test[m,1:(ncol(d_test)-1)])
+  tm[m] <- system.time({
+    r <- GET(paste0("http://localhost:",port,"/predict"), query = X_test_list)
+  })[3]
+}
+
+head(tm)
+tm[1] <- NA
+tm <- tm*1000 
+
+MM <- 500
+ggplot(data.frame(m = 1:MM, tm = tm[1:MM])) + geom_line(aes(x = m, y = tm, ymin = 0))
+
+ggplot(data.frame(m = 1:M, tm = tm[1:M])) + geom_point(aes(x = m, y = tm, ymin = 0), alpha = 0.2)
+
+quantile(tm[500:M], probs=c(0,0.9,0.95,0.99,0.995,1))
+
+
+```

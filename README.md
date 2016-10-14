@@ -25,7 +25,7 @@ H2O [promised to fix the bug](https://groups.google.com/forum/#!searchin/h2ostre
 For GBM with [smaller depth of trees](https://github.com/szilard/h2o-scoring/tree/master/2a-pojo-small) 
 the POJO scoring is very fast `~1ms`.~~
 
-Scoring takes `<1ms` with 100 trees, `max_depth = 10`.
+Scoring takes ~~`<1ms`~~ [a few ms](5a-steam-timing) with 100 trees, `max_depth = 10`.
 
 
 #### 2. From R
@@ -109,7 +109,7 @@ Scoring with the POJO is way faster for 1 event (see 1. above).
 h2o models as REST APIs. It is the prefered method to deploy models for real-time scoring and it makes
 the previous methods (and this github repo) obsolete. 
 
-Scoring takes `<1ms` with 100 trees, `max_depth = 10`. Some quick notes on how to set up and how fast it is
+Scoring takes ~~`<1ms`~~ [a few ms](5a-steam-timing) with 100 trees, `max_depth = 10`. Some quick notes on how to set up and how fast it is
 are [here](https://github.com/szilard/h2o-scoring/blob/master/5-steam/steps.txt).
 
 

@@ -15,6 +15,6 @@ Even after that there are "hickups" every few thousand iterations:
 Otherwise after warm up most requests take 4-10ms (4ms includes the time to construct the URL, network back and forth etc.)
 Hickups can cause latency of up to 40ms (or maybe if tested for longer even more), though that affects few requests.
 
-TODO: It would be nice to know if the hickups happen because of Jetty or the POJO.
+TODO: It would be nice to know if the hickups happen because of Jetty or the POJO. Is this garbage collection?
 
 

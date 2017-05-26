@@ -1,4 +1,14 @@
 
+
+**Important info:** The info in the repo is outdated. A new repo contains info on how to easily
+build a prediction engine with h2o and Steam that provides fast/real-time scoring via REST API
+[here](https://github.com/szilard/ML-scoring). 
+
+
+--------------------
+--------------------
+
+
 ## Scoring machine learning models with h2o.ai
 
 #### Various options for deploying h2o.ai models (GBM) to production
